@@ -15,7 +15,7 @@ body {font-family: 'TTJejuGamgyulR';}
     border-radius: 70%;
     margin: 5px;
     overflow: hidden;
-    border: 1px solid red;
+    border: 1px solid #F5F5DC;
 }
 .box02 {
     width: 35px;
