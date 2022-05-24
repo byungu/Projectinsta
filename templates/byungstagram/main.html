@@ -31,22 +31,22 @@
     </div>
 </nav>
 <div class="di_st" style="text-align:center; justify-content: center; padding-top:60px; background-color: #F1F3F5">
-    <!-- 좌측화면 구성-->
-    <div style="max-width: 600px; min-width: 400px; height: 100%; background-color: white; margin-right:530px; font-size: 20px;">
+    <!-- 좌측화면 구성/피드박스-->
+    {% for feed in feed_list %}
+    <div  class="feed_box" style="max-width: 600px; min-width: 400px; height: 100%; background-color: white; margin-right:530px; font-size: 20px;">
         <div style="border: solid 1px black; background: white;">
             <div class="di_st" style="align-items: center">
                 <div class="box" style="margin: 5px 20px">
                     <div class="profile">
-                        <img src="https://byungu.github.io/Projectinsta/image/i15408406726.png"
-                             style="object-fit: contain; width:60px">사용자
+                        <img src="{{ feed.profile_image }}" style="object-fit: contain; width:60px">사용자
                     </div>
                 </div>
                 <div style="margin-left: 2px; font-size: 20px;">
-                    byungu90
+                    {{ feed.user_id }}
                 </div>
             </div>
             <div>
-                <img class="image_up" src="https://byungu.github.io/Projectinsta/image/forest5.jpg">
+                <img class="image_up" src="{{ feed.image }}">
             </div>
             <div class="di_st" style="justify-content: space-between; margin: 5px; margin-left: 20px">
                 <div>
@@ -60,43 +60,8 @@
                           style="font-size:36px; margin-left: 10px">bookmark_border</span>
                 </div>
             </div>
-            <div style="text-align: left; margin: 0px 20px">멍청이 <b>외 19명</b>이 좋아합니다.</div>
-            <div style="text-align: left; margin: 0px 20px"><b>byungu90</b> 숲속 풍경을 감상해보세요~</div>
-            <div style="text-align: left; margin: 0px 20px"><b>멍청이1</b> 삐깨삐깨 삐깨쮸</div>
-            <div style="text-align: left; margin: 0px 20px"><b>멍청이23</b> 꼬북꺼북 꺼북이</div>
-            <div style="text-align: left; margin: 0px 20px"><b>멍청이56</b> 치코치카 치코리타</div>
-            <div style="text-align: center; margin: 0px 20px"></div>
-            <input type="text" placeholder="댓글 달기" style="width:100%; outline: none; ">
-        </div>
-        <div style="border: solid 1px black; background: white;  margin-top: 50px">
-            <div class="di_st" style="align-items: center">
-                <div class="box" style="margin: 5px 20px">
-                    <div class="profile">
-                        <img src="https://byungu.github.io/Projectinsta/image/mokoko01.jpg"
-                             style="object-fit: contain; width:60px">사용자
-                    </div>
-                </div>
-                <div style="margin-left: 2px; font-size: 20px;">
-                    byungu90
-                </div>
-            </div>
-            <div>
-                <img class="image_up" src="https://byungu.github.io/Projectinsta/image/forest5.jpg">
-            </div>
-            <div class="di_st" style="justify-content: space-between; margin: 5px; margin-left: 20px">
-                <div>
-                    <span class="material-icons-outlined"
-                          style="font-size:36px; margin-left: 10px">favorite_border</span>
-                    <span class="material-icons-outlined" style="font-size:36px; margin-left: 10px">textsms</span>
-                    <span class="material-icons-outlined" style="font-size:36px; margin-left: 10px">forward</span>
-                </div>
-                <div>
-                    <span class="material-icons-outlined"
-                          style="font-size:36px; margin-left: 10px">bookmark_border</span>
-                </div>
-            </div>
-            <div style="text-align: left; margin: 0px 20px">멍청이 <b>외 19명</b>이 좋아합니다.</div>
-            <div style="text-align: left; margin: 0px 20px"><b>byungu90</b> 숲속 풍경을 감상해보세요~</div>
+            <div style="text-align: left; margin: 0px 20px">멍청이 <b>외 {{ feed.like_count }}명</b>이 좋아합니다.</div>
+            <div style="text-align: left; margin: 0px 20px"><b>{{ feed.user_id }}</b>   {{ feed.content }}</div>
             <div style="text-align: left; margin: 0px 20px"><b>멍청이1</b> 삐깨삐깨 삐깨쮸</div>
             <div style="text-align: left; margin: 0px 20px"><b>멍청이23</b> 꼬북꺼북 꺼북이</div>
             <div style="text-align: left; margin: 0px 20px"><b>멍청이56</b> 치코치카 치코리타</div>
@@ -104,6 +69,8 @@
             <input type="text" placeholder="댓글 달기" style="width:100%; outline: none; ">
         </div>
     </div>
+    {% endfor %}
+    <!-- 여기까지 -->
     <!-- 우측화면 구성-->
     <div style="width: 400px; height: 850px; background-color: blue; position: fixed; left:53%; background:#e9ecef; font-size: 20px;">
         <div class="di_st" style="align-items: center">
