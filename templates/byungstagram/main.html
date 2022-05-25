@@ -32,8 +32,8 @@
 </nav>
 <div class="di_st" style="text-align:center; justify-content: center; padding-top:60px; background-color: #F1F3F5">
     <!-- 좌측화면 구성/피드박스-->
-    {% for feed in feed_list %}
     <div  class="feed_box" style="max-width: 600px; min-width: 400px; height: 100%; background-color: white; margin-right:530px; font-size: 20px;">
+        {% for feed in feed_list %}
         <div style="border: solid 1px black; background: white;">
             <div class="di_st" style="align-items: center">
                 <div class="box" style="margin: 5px 20px">
@@ -67,9 +67,9 @@
             <div style="text-align: left; margin: 0px 20px"><b>멍청이56</b> 치코치카 치코리타</div>
             <div style="text-align: center; margin: 0px 20px"></div>
             <input type="text" placeholder="댓글 달기" style="width:100%; outline: none; ">
-        </div>
+        </div><br><br>
+        {% endfor %}
     </div>
-    {% endfor %}
     <!-- 여기까지 -->
     <!-- 우측화면 구성-->
     <div style="width: 400px; height: 850px; background-color: blue; position: fixed; left:53%; background:#e9ecef; font-size: 20px;">
