@@ -223,26 +223,28 @@
     </div>
 </div>
 
-<!--<div id="modal_add_feed" class="modal_overlay">-->
-<!--    <div class="modal_window">-->
-<!--        <div class="modal_title">-->
-<!--            <div class="modal_title_side"></div>-->
-<!--            <div> 새 게시물 </div>-->
-<!--            <div class="modal_title_side">-->
-<!--                <span id="close_modal" class="material-icons-outlined">-->
-<!--                    close-->
-<!--                </span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="modal_image_upload">-->
+<div id="modal_add_feed" class="modal_overlay">
+    <div class="modal_window">
+        <div class="modal_title">
+            <div class="modal_title_side"></div>
+            <div> 새 게시물 </div>
+            <div class="modal_title_side">
+                <span id="close_modal" class="material-icons-outlined">
+                    close
+                </span>
+            </div>
+        </div>
+        <div class="modal_image_upload">
 
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+        </div>
+    </div>
+</div>
 <script>
-    $('#nav_add_box').click(function()) {
-    allert("add_box를 클릭했어요")
-    }
+    $('#nav_add_box').click(function(){
+        $('.modal_overlay').css({
+            display: 'flex'
+        });
+    });
 </script>
 <!-- Optional JavaScript; choose one of the two! -->
 

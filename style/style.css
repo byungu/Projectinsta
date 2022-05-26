@@ -55,7 +55,7 @@ body {font-family: 'TTJejuGamgyulR';}
     position: absolute;
     left: 0;
     top: 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: column;
     justify-content: center;
