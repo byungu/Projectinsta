@@ -11,5 +11,3 @@ class Main(APIView):
         for feed in feed_list:
 
             return render(request, "byungstagram/main.html", context=dict(feed_list=feed_list))
-
-    def
