@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
           rel="stylesheet">
     <link rel="stylesheet" href="https://byungu.github.io/Projectinsta/style/style.css">
+    <!-- jquery-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <title>Byugu's gram!!</title>
 </head>
 <body>
@@ -24,7 +26,7 @@
         <div>
             <span class="material-icons-outlined" style="font-size:36px; margin-left: 10px">home</span>
             <span class="material-icons-outlined" style="font-size:36px; margin-left: 10px">forward</span>
-            <span class="material-icons-outlined" style="font-size:36px; margin-left: 10px">add_box</span>
+            <span id="nav_add_box" class="material-icons-outlined" style="font-size:36px; margin-left: 10px">add_box</span>
             <span class="material-icons-outlined" style="font-size:36px; margin-left: 10px">explore</span>
             <span class="material-icons-outlined" style="font-size:36px; margin-left: 10px">favorite_border</span>
         </div>
@@ -221,23 +223,27 @@
     </div>
 </div>
 
-<div id="modal_add_feed" class="modal_overlay">
-    <div class="modal_window">
-        <div class="modal_title">
-            <div class="modal_title_side"></div>
-            <div> 새 게시물 </div>
-            <div class="modal_title_side">
-                <span id="close_modal" class="material-icons-outlined">
-                    close
-                </span>
-            </div>
-        </div>
-        <div class="modal_image_upload">
+<!--<div id="modal_add_feed" class="modal_overlay">-->
+<!--    <div class="modal_window">-->
+<!--        <div class="modal_title">-->
+<!--            <div class="modal_title_side"></div>-->
+<!--            <div> 새 게시물 </div>-->
+<!--            <div class="modal_title_side">-->
+<!--                <span id="close_modal" class="material-icons-outlined">-->
+<!--                    close-->
+<!--                </span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="modal_image_upload">-->
 
-        </div>
-    </div>
-</div>
-
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<script>
+    $('#nav_add_box').click(function()) {
+    allert("add_box를 클릭했어요")
+    }
+</script>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
