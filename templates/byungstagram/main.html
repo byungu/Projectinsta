@@ -14,6 +14,30 @@
     <!-- jquery-->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <title>Byugu's gram!!</title>
+    <style>
+        .modal_overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+            flex-direction: column;
+            align-items: column;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0);
+            backdrop-filter: blur(1.5px);
+            -webkit-backdrop-filter: blur(1.5px);
+        }
+        .modal_window {
+            background: white;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            width: 800px;
+            height: 600px;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; width:100%; background:white">
@@ -222,21 +246,20 @@
         <div style="margin-left: 20px; margin-top: 20px; color: gray; font-size: 12px; text-align: center;">2022 Byungusgram FROM Byungu</div>
     </div>
 </div>
-
 <div id="modal_add_feed" class="modal_overlay">
-    <div class="modal_window">
-        <div class="modal_title">
-            <div class="modal_title_side"></div>
-            <div> 새 게시물 </div>
-            <div class="modal_title_side">
-                <span id="close_modal" class="material-icons-outlined">
-                    close
-                </span>
-            </div>
-        </div>
-        <div class="modal_image_upload">
+    <div class="modal_window" style="left:20%; width:60%;">
+<!--        <div class="modal_title">-->
+<!--            <div class="modal_title_side"></div>-->
+<!--            <div> 새 게시물 </div>-->
+<!--            <div class="modal_title_side">-->
+<!--                <span id="close_modal" class="material-icons-outlined">-->
+<!--                    close-->
+<!--                </span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="modal_image_upload">-->
 
-        </div>
+<!--        </div>-->
     </div>
 </div>
 <script>
