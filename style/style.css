@@ -73,4 +73,6 @@ body {font-family: 'TTJejuGamgyulR';}
     height: 600px;
     position: relative;
     padding: 10px;
+    justify-content: center;
+
 }
