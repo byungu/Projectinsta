@@ -79,16 +79,47 @@ body {font-family: 'TTJejuGamgyulR';}
     justify-content: space-between;
     font-weight: bold;
     font-size: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.18);
 }
 
 .modal_title_side{
+    margin: 5px;
     flex: 0 0 40px;
     text-align: center;
 }
+
 .modal_image_upload{
+    outline: 2px dashed black ;
+    outline-offset:-10px;
+    transition: all .15s ease-in-out;
+    width: 798px;
+    height: 548px;
+    text-align: center;
+    line-height: 548px;
+}
+
+.modal_image_upload_content{
     outline: 2px dashed black ;
     outline-offset:-10px;
     text-align: center;
     transition: all .15s ease-in-out;
+    width:500px;
     height: 548px;
+}
+
+.modal_image_content{
+    display: flex;
+    flex-direction: row;
+}
+
+.modal_content_write{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgba(0, 0, 0, 0.18);;
+}
+
+.feed_content_textarea{
+    resize: none;
+    width: 294px;
+    border: none;
 }
