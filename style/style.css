@@ -85,3 +85,11 @@ body {font-family: 'TTJejuGamgyulR';}
     flex: 0 0 40px;
     text-align: center;
 }
+.modal_image_upload{
+    outline: 2px dashed black ;
+    outline-offset:-10px;
+    text-align: center;
+    transition: all .15s ease-in-out;
+    width:780px;
+    height: 548px;
+}
